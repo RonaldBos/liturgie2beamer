@@ -58,6 +58,24 @@ class LiturgieListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by LiturgieParser#nummer_of_nummers.
+    def enterNummer_of_nummers(self, ctx):
+        pass
+
+    # Exit a parse tree produced by LiturgieParser#nummer_of_nummers.
+    def exitNummer_of_nummers(self, ctx):
+        pass
+
+
+    # Enter a parse tree produced by LiturgieParser#nummers.
+    def enterNummers(self, ctx):
+        pass
+
+    # Exit a parse tree produced by LiturgieParser#nummers.
+    def exitNummers(self, ctx):
+        pass
+
+
     # Enter a parse tree produced by LiturgieParser#psalm.
     def enterPsalm(self, ctx):
         pass
@@ -103,6 +121,24 @@ class LiturgieListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by LiturgieParser#welkom.
+    def enterWelkom(self, ctx):
+        pass
+
+    # Exit a parse tree produced by LiturgieParser#welkom.
+    def exitWelkom(self, ctx):
+        pass
+
+
+    # Enter a parse tree produced by LiturgieParser#stilte.
+    def enterStilte(self, ctx):
+        pass
+
+    # Exit a parse tree produced by LiturgieParser#stilte.
+    def exitStilte(self, ctx):
+        pass
+
+
     # Enter a parse tree produced by LiturgieParser#votum.
     def enterVotum(self, ctx):
         pass
@@ -121,6 +157,15 @@ class LiturgieListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by LiturgieParser#amen.
+    def enterAmen(self, ctx):
+        pass
+
+    # Exit a parse tree produced by LiturgieParser#amen.
+    def exitAmen(self, ctx):
+        pass
+
+
     # Enter a parse tree produced by LiturgieParser#gebed.
     def enterGebed(self, ctx):
         pass
@@ -136,6 +181,15 @@ class LiturgieListener(ParseTreeListener):
 
     # Exit a parse tree produced by LiturgieParser#lezen.
     def exitLezen(self, ctx):
+        pass
+
+
+    # Enter a parse tree produced by LiturgieParser#de_rest.
+    def enterDe_rest(self, ctx):
+        pass
+
+    # Exit a parse tree produced by LiturgieParser#de_rest.
+    def exitDe_rest(self, ctx):
         pass
 
 

@@ -6,8 +6,11 @@ grammar Liturgie;
 liturgie: regel+;
 
 regel : (lied |
+		 welkom |
+		 stilte |
 		 votum |
 		 groet |
+		 amen |
 		 gebed |
 		 lezen |
 		 preek |
@@ -22,29 +25,41 @@ bundel : psalm | gezang | liedboek | opwekking | nlb;
 
 coupletten : ':' couplet+;
 
-couplet : (nummer ',')* nummer; 
+couplet : (nummer_of_nummers ',')* nummer_of_nummers;
+
+nummer_of_nummers: nummer | nummers;
+
+nummers : nummer '-' nummer;
 
 psalm : 'Ps' Dot?  | 'Psalm';
 
-gezang : 'Gz' Dot? | 'Gezang';
+gezang : 'Gz' Dot? | 'Gezang' | 'GK';
 
-liedboek : 'LB' Dot? | 'OLB' Dot? | 'Lied';
+liedboek : 'LB' Dot? | 'OLB' Dot? | 'Lied' | 'Liedboek';
 
 opwekking : 'Opw' Dot? | 'Opwekking';
 
 nlb : 'NLB' Dot?;
 
+welkom : 'Welkom';
+
+stilte : 'Stilte';
+
 votum : 'Votum';
 
-groet : 'Groet';
+groet : 'Groet' | 'Zegengroet';
+
+amen : 'Amen';
 
 gebed : 'Gebed' ~EOL*;
 
-lezen : ('I' | 'II') ~EOL*;
+lezen : ('Lezen' ':'?)? de_rest;
 
-preek : 'Preek';
+de_rest : (Character | Digit | Punctuation)+ ~EOL*;
 
-belijdenis : 'Geloofsbelijdenis' ~EOL*;
+preek : 'Preek' de_rest?;
+
+belijdenis : 'Geloofsbelijdenis' de_rest;
 
 collecte : 'Collecte';
 
@@ -54,6 +69,7 @@ nummer : Digit+;
 
 Digit : [0-9]+;
 Character : [A-Za-z];
+Punctuation : [:-;()];
 Dot : '.';
 WS : [ \t]+ -> skip;
 EOL : '\r'? '\n';

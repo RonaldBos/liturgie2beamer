@@ -35,6 +35,16 @@ class LiturgieVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by LiturgieParser#nummer_of_nummers.
+    def visitNummer_of_nummers(self, ctx):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by LiturgieParser#nummers.
+    def visitNummers(self, ctx):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by LiturgieParser#psalm.
     def visitPsalm(self, ctx):
         return self.visitChildren(ctx)
@@ -60,6 +70,16 @@ class LiturgieVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by LiturgieParser#welkom.
+    def visitWelkom(self, ctx):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by LiturgieParser#stilte.
+    def visitStilte(self, ctx):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by LiturgieParser#votum.
     def visitVotum(self, ctx):
         return self.visitChildren(ctx)
@@ -70,6 +90,11 @@ class LiturgieVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by LiturgieParser#amen.
+    def visitAmen(self, ctx):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by LiturgieParser#gebed.
     def visitGebed(self, ctx):
         return self.visitChildren(ctx)
@@ -77,6 +102,11 @@ class LiturgieVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by LiturgieParser#lezen.
     def visitLezen(self, ctx):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by LiturgieParser#de_rest.
+    def visitDe_rest(self, ctx):
         return self.visitChildren(ctx)
 
 
