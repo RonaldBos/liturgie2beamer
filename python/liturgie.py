@@ -44,7 +44,9 @@ class LiturgieSong(object):
             # no: print song in OpenSong order
             print "%s %s" % (self.bundel.capitalize(), self.nummer)
             print
-            for regels in song.getVerses():
+            for coupletNummer, regels in song.getVerses():
+                print "%s %s: %s" % (self.bundel.capitalize(), self.nummer, coupletNummer)
+                print
                 print "\n".join(regels)
                 print
         
@@ -113,6 +115,21 @@ class MyLiturgieVisitor(LiturgieVisitor):
             rangeStart = int(obj.getChild(0).getText())
             rangeEnd = int(obj.getChild(2).getText())
             return range(rangeStart, rangeEnd + 1)
+
+def convertStream(input, database):
+    "Parse input character stream and print out song texts"
+    lexer = LiturgieLexer(input)
+    stream = CommonTokenStream(lexer)
+    parser = LiturgieParser(stream)
+    tree = parser.liturgie()
+        
+    # get list of objects from liturgie
+    visitor = MyLiturgieVisitor();
+    liturgieObjectList = visitor.visitLiturgie(tree)
+        
+    # print texts
+    for element in liturgieObjectList:
+        element.printText(database)
         
 def main(argv):
     "Program entry point"
@@ -131,18 +148,7 @@ def main(argv):
         
         # parse input
         input = FileStream(inputPath)
-        lexer = LiturgieLexer(input)
-        stream = CommonTokenStream(lexer)
-        parser = LiturgieParser(stream)
-        tree = parser.liturgie()
-        
-        # get list of objects from liturgie
-        visitor = MyLiturgieVisitor();
-        liturgieObjectList = visitor.visitLiturgie(tree)
-        
-        # print texts
-        for element in liturgieObjectList:
-            element.printText(database)
+        convertStream(input, database)
 
 if __name__ == "__main__":
  	main(sys.argv)

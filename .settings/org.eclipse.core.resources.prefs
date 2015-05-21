@@ -1,4 +1,5 @@
 eclipse.preferences.version=1
 encoding//python/generated/LiturgieParser.py=utf-8
-encoding//python/input2.txt=US-ASCII
+encoding//python/testcases/20150524_middag.txt=US-ASCII
+encoding//python/testcases/input2.txt=US-ASCII
 encoding/python=UTF-8

@@ -17,7 +17,7 @@ regel : (lied |
 		 belijdenis |
 		 collecte |
 		 zegen
-		 ) EOL;
+		 )? Separator;
 
 lied : bundel nummer coupletten?;
 
@@ -33,7 +33,7 @@ nummers : nummer '-' nummer;
 
 psalm : 'Ps' Dot?  | 'Psalm';
 
-gezang : 'Gz' Dot? | 'Gezang' | 'GK';
+gezang : 'Gz' Dot? | 'Gez' Dot? | 'Gezang' | 'GK';
 
 liedboek : 'LB' Dot? | 'OLB' Dot? | 'Lied' | 'Liedboek';
 
@@ -51,11 +51,11 @@ groet : 'Groet' | 'Zegengroet';
 
 amen : 'Amen';
 
-gebed : 'Gebed' ~EOL*;
+gebed : 'Gebed' de_rest;
 
-lezen : ('Lezen' ':'?)? de_rest;
+lezen : (('Lezen' | 'Schriftlezing') ':'?)? de_rest;
 
-de_rest : (Character | Digit | Punctuation)+ ~EOL*;
+de_rest : (Character | Digit | Punctuation)+ ~Separator;
 
 preek : 'Preek' de_rest?;
 
@@ -69,7 +69,8 @@ nummer : Digit+;
 
 Digit : [0-9]+;
 Character : [A-Za-z];
-Punctuation : [:-;()];
+Punctuation : [-()];
 Dot : '.';
 WS : [ \t]+ -> skip;
-EOL : '\r'? '\n';
+fragment EOL : '\r'? '\n';
+Separator : (EOL | ':' | '+' | ';');

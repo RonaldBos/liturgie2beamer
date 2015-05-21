@@ -1,6 +1,7 @@
 "Open song library parser"
 import io
 import os
+import sys
 import xml.etree.ElementTree as ET
 
 def parse_opensong_lyrics(text):
@@ -75,11 +76,19 @@ class OpenSong(object):
     
     def getVerse(self, number):
         verseKey = "V%d" % number
+        if not verseKey in self.verses.keys():
+            sys.stderr.write("Verse %s not found in %s %s\n" % (number, self.songbook, self.number))
+            return ["***%s %s vers %s bestaat niet***" % (self.songbook, self.number, number)]
         return self.verses[verseKey]
+    
+    def verseKeyToCouplet(self, key):
+        if key.startswith("V"):
+            return key[1:]
+        return key
     
     def getVerses(self):
         for verseKey in self.verses:
-            yield self.verses[verseKey]
+            yield self.verseKeyToCouplet(verseKey), self.verses[verseKey]
     
     def __str__(self):
         return "%s %s, presentation %s, verses %s" % (self.songbook, self.number, self.presentation, self.verses)
@@ -114,7 +123,7 @@ class OpenSongLibrary(object):
                 title = openSong.title
                 if self.songs.has_key(title):
                     #raise ValueError("%s: duplicate song title with %s" % (songPath, self.songs[title].path))
-                    print "Warning: %s: duplicate song title with %s, discarding" % (songPath, self.songs[title].path)
+                    sys.stderr.write("Warning: %s: duplicate song title with %s, discarding\n" % (songPath, self.songs[title].path))
                 self.songs[title] = openSong
                 
     def getSongFromBook(self, book, number):
