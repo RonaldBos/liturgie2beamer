@@ -42,8 +42,6 @@ class LiturgieSong(object):
                 print
         else:
             # no: print song in OpenSong order
-            print "%s %s" % (self.bundel.capitalize(), self.nummer)
-            print
             for coupletNummer, regels in song.getVerses():
                 print "%s %s: %s" % (self.bundel.capitalize(), self.nummer, coupletNummer)
                 print
