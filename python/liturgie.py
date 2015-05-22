@@ -31,6 +31,11 @@ class LiturgieSong(object):
         databaseBook = PARSER_BOOK_TO_OPENSONG_BOOK[self.bundel]
         song = database.getSongFromBook(databaseBook, self.nummer)
         
+        if song is None:
+            print "***%s %s niet in bibliotheek gevonden***" % (databaseBook, self.nummer)
+            print
+            return
+        
         # do we have verses?
         if self.coupletten:
             # yes: print only selected coupletten

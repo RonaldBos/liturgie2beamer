@@ -127,7 +127,13 @@ class OpenSongLibrary(object):
                 self.songs[title] = openSong
                 
     def getSongFromBook(self, book, number):
+        if not book in self.books.keys():
+            sys.stderr.write("Unknown songbook %s\n" % book)
+            return None
         bookDict = self.books[book]
+        if not number in bookDict.keys():
+            sys.stderr.write("Song %s not found in book %s\n" % (number, book))
+            return None
         return bookDict[number]
 
 if __name__ == "__main__":

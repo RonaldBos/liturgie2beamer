@@ -73,4 +73,4 @@ Punctuation : [-()];
 Dot : '.';
 WS : [ \t]+ -> skip;
 fragment EOL : '\r'? '\n';
-Separator : (EOL | ':' | '+' | ';');
+Separator : (EOL | ':' | '+' | ';' | '=');
