@@ -121,6 +121,15 @@ class LiturgieListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by LiturgieParser#pvn.
+    def enterPvn(self, ctx):
+        pass
+
+    # Exit a parse tree produced by LiturgieParser#pvn.
+    def exitPvn(self, ctx):
+        pass
+
+
     # Enter a parse tree produced by LiturgieParser#welkom.
     def enterWelkom(self, ctx):
         pass

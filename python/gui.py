@@ -5,7 +5,9 @@ from opensong import OpenSongLibrary
 from antlr4.InputStream import InputStream
 
 def removeNonAscii(s):
-    return "".join(i for i in s if ord(i)<128)
+    nonAscii = "".join(i for i in s if ord(i) < 128)
+    # lexer returns only lower-case tokens
+    return nonAscii.lower()
 
 class RedirectText(object):
     def __init__(self,aWxTextCtrl):
@@ -62,7 +64,8 @@ class MyForm(wx.Frame):
         editMenu = wx.Menu()
         copy = editMenu.Append(wx.ID_COPY, 'Kopieren\tCtrl+C', 'Kopieer selectie')
         paste = editMenu.Append(wx.ID_PASTE, 'Plakken\tCtrl+V', 'Plak inhoud van klembord')
-        selectAll = editMenu.Append(wx.ID_SELECTALL, '&Alles selecteren\tCtrl+A', 'Selecteer alles')
+        selectAll = editMenu.Append(wx.ID_SELECTALL, 'Alles selecteren\tCtrl+A', 'Selecteer alles')
+        undo = editMenu.Append(wx.ID_UNDO, 'Ongedaan maken\tCtrl+Z', 'Ongedaan maken')
         aboutMenu = wx.Menu()
         about = aboutMenu.Append(wx.ID_ABOUT, '&Over dit programma', 'Informatie over dit programma')
         menubar.Append(fileMenu, '&Bestand')
@@ -71,6 +74,7 @@ class MyForm(wx.Frame):
         self.SetMenuBar(menubar)
         self.Bind(wx.EVT_MENU, self.onQuit, fitem)
         self.Bind(wx.EVT_MENU, self.onSelectAll, selectAll)
+        self.Bind(wx.EVT_MENU, self.onUndo, undo)
         self.Bind(wx.EVT_MENU, self.onAbout, about)
 
         # redirect text here
@@ -97,6 +101,11 @@ class MyForm(wx.Frame):
         text = self.FindFocus()
         if text is not None:
             text.SelectAll()
+            
+    def onUndo(self, event):
+        text = self.FindFocus()
+        if text is not None:
+            text.Undo()
             
     def onAbout(self, event):
         description = """Liturgie2Beamer genereert liedteksten op basis

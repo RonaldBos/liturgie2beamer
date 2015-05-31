@@ -70,6 +70,11 @@ class LiturgieVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by LiturgieParser#pvn.
+    def visitPvn(self, ctx):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by LiturgieParser#welkom.
     def visitWelkom(self, ctx):
         return self.visitChildren(ctx)

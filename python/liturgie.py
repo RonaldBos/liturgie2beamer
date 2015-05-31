@@ -16,7 +16,8 @@ PARSER_BOOK_TO_OPENSONG_BOOK = {
     "gezang" : "GK",
     "liedboek" : "Lb.",
     "opwekking" : "Opw.",
-    "nlb" : "NLB"
+    "nlb" : "NLB",
+    "pvn" : "PvN"
 }
 
 class LiturgieSong(object):
@@ -97,6 +98,9 @@ class MyLiturgieVisitor(LiturgieVisitor):
     
     def visitNlb(self, ctx):
         return "nlb"
+    
+    def visitPvn(self, ctx):
+        return "pvn";
     
     def visitCoupletten(self, ctx):
         result = []

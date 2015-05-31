@@ -21,25 +21,27 @@ regel : (lied |
 
 lied : bundel nummer coupletten?;
 
-bundel : psalm | gezang | liedboek | opwekking | nlb;
+bundel : psalm | gezang | liedboek | opwekking | nlb | pvn;
 
 coupletten : ':' couplet+;
 
-couplet : (nummer_of_nummers ',')* nummer_of_nummers;
+couplet : (nummer_of_nummers ',')* 'en'? nummer_of_nummers;
 
 nummer_of_nummers: nummer | nummers;
 
 nummers : nummer '-' nummer;
 
-psalm : 'Ps' Dot?  | 'Psalm';
+psalm : Psalm;
 
-gezang : 'Gz' Dot? | 'Gez' Dot? | 'Gezang' | 'GK';
+gezang : Gezang | GereformeerdKerkboek | GereformeerdKerkboek Gezang;
 
-liedboek : 'LB' Dot? | 'OLB' Dot? | 'Lied' | 'Liedboek';
+liedboek : Liedboek;
 
-opwekking : 'Opw' Dot? | 'Opwekking';
+opwekking : Opwekking;
 
-nlb : 'NLB' Dot?;
+nlb : NieuweLiedboek;
+
+pvn : PsalmenVoorNu;
 
 welkom : 'Welkom';
 
@@ -74,3 +76,11 @@ Dot : '.';
 WS : [ \t]+ -> skip;
 fragment EOL : '\r'? '\n';
 Separator : (EOL | ':' | '+' | ';' | '=');
+
+Psalm : 'ps' '.'? | 'psalm';
+Gezang : 'g' 'e'? 'z' '.'? | 'gezang';
+GereformeerdKerkboek : 'gk' '.'?;
+Liedboek : 'o'? 'lb' '.'? | 'liedboek' | 'lied';
+Opwekking : 'opw' '.'? | 'opwekking';
+NieuweLiedboek : 'nlb' '.'?;
+PsalmenVoorNu : 'pvn' '.'?;
