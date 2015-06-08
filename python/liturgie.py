@@ -78,7 +78,7 @@ class MyLiturgieVisitor(LiturgieVisitor):
     
     def visitLied(self, ctx):
         bundel = self.visit(ctx.bundel())
-        nummer = ctx.nummer().getText()
+        nummer = ctx.liednummer().getText()
         couplettenList = None
         if ctx.coupletten():
             couplettenList = self.visit(ctx.coupletten())
@@ -100,7 +100,7 @@ class MyLiturgieVisitor(LiturgieVisitor):
         return "nlb"
     
     def visitPvn(self, ctx):
-        return "pvn";
+        return "pvn"
     
     def visitCoupletten(self, ctx):
         result = []

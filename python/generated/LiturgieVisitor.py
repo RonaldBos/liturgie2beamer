@@ -135,6 +135,11 @@ class LiturgieVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by LiturgieParser#liednummer.
+    def visitLiednummer(self, ctx):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by LiturgieParser#nummer.
     def visitNummer(self, ctx):
         return self.visitChildren(ctx)

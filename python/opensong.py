@@ -57,10 +57,11 @@ class OpenSong(object):
                 songBook = None
             self.songbook = songBook
             hymnNumberNode = song.find("hymn_number")
-            if hymnNumberNode is not None:
+            if hymnNumberNode is not None and hymnNumberNode.text is not None:
                 hymnNumber = hymnNumberNode.text
             else:
-                hymnNumber = None
+                sys.stderr.write('%s: No hymn_number defined\n' % path)
+                return
             self.number = hymnNumber
             presentation = []
             presentationNode = song.find("presentation")
@@ -123,7 +124,7 @@ class OpenSongLibrary(object):
                 title = openSong.title
                 if self.songs.has_key(title):
                     #raise ValueError("%s: duplicate song title with %s" % (songPath, self.songs[title].path))
-                    sys.stderr.write("Warning: %s: duplicate song title with %s, discarding\n" % (songPath, self.songs[title].path))
+                    sys.stderr.write("%s: duplicate song title with %s, discarding\n" % (songPath, self.songs[title].path))
                 self.songs[title] = openSong
                 
     def getSongFromBook(self, book, number):

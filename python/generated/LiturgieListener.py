@@ -238,6 +238,15 @@ class LiturgieListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by LiturgieParser#liednummer.
+    def enterLiednummer(self, ctx):
+        pass
+
+    # Exit a parse tree produced by LiturgieParser#liednummer.
+    def exitLiednummer(self, ctx):
+        pass
+
+
     # Enter a parse tree produced by LiturgieParser#nummer.
     def enterNummer(self, ctx):
         pass

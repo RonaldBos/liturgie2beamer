@@ -19,7 +19,7 @@ regel : (lied |
 		 zegen
 		 )? Separator;
 
-lied : bundel nummer coupletten?;
+lied : bundel liednummer coupletten?;
 
 bundel : psalm | gezang | liedboek | opwekking | nlb | pvn;
 
@@ -66,6 +66,8 @@ belijdenis : 'Geloofsbelijdenis' de_rest;
 collecte : 'Collecte';
 
 zegen : 'Zegen';
+
+liednummer : Digit+ Character?;
 
 nummer : Digit+;
 
