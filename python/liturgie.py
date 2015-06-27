@@ -40,10 +40,9 @@ class LiturgieSong(object):
         # do we have verses?
         if self.coupletten:
             # yes: print only selected coupletten
-            for coupletNummer in self.coupletten:
-                print "%s %s: %d" % (self.bundel.capitalize(), self.nummer, coupletNummer)
+            for actualCoupletNummer, regels in song.getVerse(self.coupletten):
+                print "%s %s: %s" % (self.bundel.capitalize(), self.nummer, actualCoupletNummer)
                 print
-                regels = song.getVerse(coupletNummer)
                 print "\n".join(regels)
                 print
         else:

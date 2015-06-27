@@ -3,7 +3,7 @@
  */
 grammar Liturgie;
 
-liturgie: regel+;
+liturgie: regel+ EOF;
 
 regel : (lied |
 		 welkom |
@@ -16,8 +16,8 @@ regel : (lied |
 		 preek |
 		 belijdenis |
 		 collecte |
-		 zegen
-		 )? Separator;
+		 zegen |
+		 .)? Separator;
 
 lied : bundel liednummer coupletten?;
 
