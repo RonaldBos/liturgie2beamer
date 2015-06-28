@@ -72,6 +72,7 @@ class OpenSong(object):
             self.presentation = presentation
             lyrics = song.find("lyrics").text
             self.verses = parse_opensong_lyrics(lyrics)
+            self.presentation = [v for v in self.presentation if v in self.verses.keys()]
         except ET.ParseError:
             raise ValueError("%s: failed to parse" % path)
     
@@ -82,15 +83,16 @@ class OpenSong(object):
             if not verseKey in self.verses.keys():
                 sys.stderr.write("Verse %s not found in %s %s\n" % (number, self.songbook, self.number))
                 yield number, ["***%s %s vers %s bestaat niet***" % (self.songbook, self.number, number)]
+                continue
             # see if we have a chorus before and/or after the verse
             verseIndex = self.presentation.index(verseKey)
             startIndex = verseIndex
             endIndex = verseIndex + 1
-            if verseIndex > 0 and first and self.presentation[0] != self.coupletToVerseKey(1):
+            if first and verseIndex > 0 and self.presentation[0] != self.coupletToVerseKey(1):
                 # chorus before only for the first verse, and when the song starts with a chorus
                 startIndex = verseIndex - 1 if self.presentation[verseIndex - 1] != self.coupletToVerseKey(number - 1) else verseIndex
             if verseIndex < len(self.presentation) - 1:
-                endIndex = verseIndex + 2 if self.presentation[verseIndex - 1] != self.coupletToVerseKey(number + 1) else verseIndex + 1
+                endIndex = verseIndex + 2 if self.presentation[verseIndex + 1] != self.coupletToVerseKey(number + 1) else verseIndex + 1
             for verseKey in self.presentation[startIndex:endIndex]:
                 yield self.verseKeyToCouplet(verseKey), self.verses[verseKey]
             first = False

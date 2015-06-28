@@ -15,80 +15,81 @@ else:
 def serializedATN():
     with StringIO() as buf:
         buf.write(u"\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3")
-        buf.write(u" \u00bf\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t")
+        buf.write(u" \u00c2\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t")
         buf.write(u"\7\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4\f\t\f\4\r\t\r")
         buf.write(u"\4\16\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22\4")
         buf.write(u"\23\t\23\4\24\t\24\4\25\t\25\4\26\t\26\4\27\t\27\4\30")
         buf.write(u"\t\30\4\31\t\31\4\32\t\32\4\33\t\33\4\34\t\34\4\35\t")
         buf.write(u"\35\3\2\6\2<\n\2\r\2\16\2=\3\2\3\2\3\3\3\3\3\3\3\3\3")
         buf.write(u"\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\5\3O\n\3\3\3\3\3\3")
-        buf.write(u"\4\3\4\3\4\5\4V\n\4\3\5\3\5\3\5\3\5\3\5\3\5\5\5^\n\5")
-        buf.write(u"\3\6\3\6\6\6b\n\6\r\6\16\6c\3\7\3\7\3\7\7\7i\n\7\f\7")
-        buf.write(u"\16\7l\13\7\3\7\5\7o\n\7\3\7\3\7\3\b\3\b\5\bu\n\b\3\t")
-        buf.write(u"\3\t\3\t\3\t\3\n\3\n\3\13\3\13\3\13\3\13\5\13\u0081\n")
-        buf.write(u"\13\3\f\3\f\3\r\3\r\3\16\3\16\3\17\3\17\3\20\3\20\3\21")
-        buf.write(u"\3\21\3\22\3\22\3\23\3\23\3\24\3\24\3\25\3\25\3\25\3")
-        buf.write(u"\26\3\26\5\26\u009a\n\26\5\26\u009c\n\26\3\26\3\26\3")
-        buf.write(u"\27\6\27\u00a1\n\27\r\27\16\27\u00a2\3\27\3\27\3\30\3")
-        buf.write(u"\30\5\30\u00a9\n\30\3\31\3\31\3\31\3\32\3\32\3\33\3\33")
-        buf.write(u"\3\34\6\34\u00b3\n\34\r\34\16\34\u00b4\3\34\5\34\u00b8")
-        buf.write(u"\n\34\3\35\6\35\u00bb\n\35\r\35\16\35\u00bc\3\35\2\2")
-        buf.write(u"\36\2\4\6\b\n\f\16\20\22\24\26\30\32\34\36 \"$&(*,.\60")
-        buf.write(u"\62\64\668\2\6\3\2\n\13\3\2\16\17\3\2\24\26\3\2\31\31")
-        buf.write(u"\u00c3\2;\3\2\2\2\4N\3\2\2\2\6R\3\2\2\2\b]\3\2\2\2\n")
-        buf.write(u"_\3\2\2\2\fj\3\2\2\2\16t\3\2\2\2\20v\3\2\2\2\22z\3\2")
-        buf.write(u"\2\2\24\u0080\3\2\2\2\26\u0082\3\2\2\2\30\u0084\3\2\2")
-        buf.write(u"\2\32\u0086\3\2\2\2\34\u0088\3\2\2\2\36\u008a\3\2\2\2")
-        buf.write(u" \u008c\3\2\2\2\"\u008e\3\2\2\2$\u0090\3\2\2\2&\u0092")
-        buf.write(u"\3\2\2\2(\u0094\3\2\2\2*\u009b\3\2\2\2,\u00a0\3\2\2\2")
-        buf.write(u".\u00a6\3\2\2\2\60\u00aa\3\2\2\2\62\u00ad\3\2\2\2\64")
-        buf.write(u"\u00af\3\2\2\2\66\u00b2\3\2\2\28\u00ba\3\2\2\2:<\5\4")
-        buf.write(u"\3\2;:\3\2\2\2<=\3\2\2\2=;\3\2\2\2=>\3\2\2\2>?\3\2\2")
-        buf.write(u"\2?@\7\2\2\3@\3\3\2\2\2AO\5\6\4\2BO\5\36\20\2CO\5 \21")
-        buf.write(u"\2DO\5\"\22\2EO\5$\23\2FO\5&\24\2GO\5(\25\2HO\5*\26\2")
-        buf.write(u"IO\5.\30\2JO\5\60\31\2KO\5\62\32\2LO\5\64\33\2MO\13\2")
-        buf.write(u"\2\2NA\3\2\2\2NB\3\2\2\2NC\3\2\2\2ND\3\2\2\2NE\3\2\2")
-        buf.write(u"\2NF\3\2\2\2NG\3\2\2\2NH\3\2\2\2NI\3\2\2\2NJ\3\2\2\2")
-        buf.write(u"NK\3\2\2\2NL\3\2\2\2NM\3\2\2\2NO\3\2\2\2OP\3\2\2\2PQ")
-        buf.write(u"\7\31\2\2Q\5\3\2\2\2RS\5\b\5\2SU\5\66\34\2TV\5\n\6\2")
-        buf.write(u"UT\3\2\2\2UV\3\2\2\2V\7\3\2\2\2W^\5\22\n\2X^\5\24\13")
-        buf.write(u"\2Y^\5\26\f\2Z^\5\30\r\2[^\5\32\16\2\\^\5\34\17\2]W\3")
-        buf.write(u"\2\2\2]X\3\2\2\2]Y\3\2\2\2]Z\3\2\2\2][\3\2\2\2]\\\3\2")
-        buf.write(u"\2\2^\t\3\2\2\2_a\7\3\2\2`b\5\f\7\2a`\3\2\2\2bc\3\2\2")
-        buf.write(u"\2ca\3\2\2\2cd\3\2\2\2d\13\3\2\2\2ef\5\16\b\2fg\7\4\2")
-        buf.write(u"\2gi\3\2\2\2he\3\2\2\2il\3\2\2\2jh\3\2\2\2jk\3\2\2\2")
-        buf.write(u"kn\3\2\2\2lj\3\2\2\2mo\7\5\2\2nm\3\2\2\2no\3\2\2\2op")
-        buf.write(u"\3\2\2\2pq\5\16\b\2q\r\3\2\2\2ru\58\35\2su\5\20\t\2t")
-        buf.write(u"r\3\2\2\2ts\3\2\2\2u\17\3\2\2\2vw\58\35\2wx\7\6\2\2x")
-        buf.write(u"y\58\35\2y\21\3\2\2\2z{\7\32\2\2{\23\3\2\2\2|\u0081\7")
-        buf.write(u"\33\2\2}\u0081\7\34\2\2~\177\7\34\2\2\177\u0081\7\33")
-        buf.write(u"\2\2\u0080|\3\2\2\2\u0080}\3\2\2\2\u0080~\3\2\2\2\u0081")
-        buf.write(u"\25\3\2\2\2\u0082\u0083\7\35\2\2\u0083\27\3\2\2\2\u0084")
-        buf.write(u"\u0085\7\36\2\2\u0085\31\3\2\2\2\u0086\u0087\7\37\2\2")
-        buf.write(u"\u0087\33\3\2\2\2\u0088\u0089\7 \2\2\u0089\35\3\2\2\2")
-        buf.write(u"\u008a\u008b\7\7\2\2\u008b\37\3\2\2\2\u008c\u008d\7\b")
-        buf.write(u"\2\2\u008d!\3\2\2\2\u008e\u008f\7\t\2\2\u008f#\3\2\2")
-        buf.write(u"\2\u0090\u0091\t\2\2\2\u0091%\3\2\2\2\u0092\u0093\7\f")
-        buf.write(u"\2\2\u0093\'\3\2\2\2\u0094\u0095\7\r\2\2\u0095\u0096")
-        buf.write(u"\5,\27\2\u0096)\3\2\2\2\u0097\u0099\t\3\2\2\u0098\u009a")
-        buf.write(u"\7\3\2\2\u0099\u0098\3\2\2\2\u0099\u009a\3\2\2\2\u009a")
-        buf.write(u"\u009c\3\2\2\2\u009b\u0097\3\2\2\2\u009b\u009c\3\2\2")
-        buf.write(u"\2\u009c\u009d\3\2\2\2\u009d\u009e\5,\27\2\u009e+\3\2")
-        buf.write(u"\2\2\u009f\u00a1\t\4\2\2\u00a0\u009f\3\2\2\2\u00a1\u00a2")
-        buf.write(u"\3\2\2\2\u00a2\u00a0\3\2\2\2\u00a2\u00a3\3\2\2\2\u00a3")
-        buf.write(u"\u00a4\3\2\2\2\u00a4\u00a5\n\5\2\2\u00a5-\3\2\2\2\u00a6")
-        buf.write(u"\u00a8\7\20\2\2\u00a7\u00a9\5,\27\2\u00a8\u00a7\3\2\2")
-        buf.write(u"\2\u00a8\u00a9\3\2\2\2\u00a9/\3\2\2\2\u00aa\u00ab\7\21")
-        buf.write(u"\2\2\u00ab\u00ac\5,\27\2\u00ac\61\3\2\2\2\u00ad\u00ae")
-        buf.write(u"\7\22\2\2\u00ae\63\3\2\2\2\u00af\u00b0\7\23\2\2\u00b0")
-        buf.write(u"\65\3\2\2\2\u00b1\u00b3\7\24\2\2\u00b2\u00b1\3\2\2\2")
-        buf.write(u"\u00b3\u00b4\3\2\2\2\u00b4\u00b2\3\2\2\2\u00b4\u00b5")
-        buf.write(u"\3\2\2\2\u00b5\u00b7\3\2\2\2\u00b6\u00b8\7\25\2\2\u00b7")
-        buf.write(u"\u00b6\3\2\2\2\u00b7\u00b8\3\2\2\2\u00b8\67\3\2\2\2\u00b9")
-        buf.write(u"\u00bb\7\24\2\2\u00ba\u00b9\3\2\2\2\u00bb\u00bc\3\2\2")
-        buf.write(u"\2\u00bc\u00ba\3\2\2\2\u00bc\u00bd\3\2\2\2\u00bd9\3\2")
-        buf.write(u"\2\2\22=NU]cjnt\u0080\u0099\u009b\u00a2\u00a8\u00b4\u00b7")
-        buf.write(u"\u00bc")
+        buf.write(u"\4\3\4\3\4\5\4V\n\4\3\4\5\4Y\n\4\3\5\3\5\3\5\3\5\3\5")
+        buf.write(u"\3\5\5\5a\n\5\3\6\3\6\6\6e\n\6\r\6\16\6f\3\7\3\7\3\7")
+        buf.write(u"\7\7l\n\7\f\7\16\7o\13\7\3\7\5\7r\n\7\3\7\3\7\3\b\3\b")
+        buf.write(u"\5\bx\n\b\3\t\3\t\3\t\3\t\3\n\3\n\3\13\3\13\3\13\3\13")
+        buf.write(u"\5\13\u0084\n\13\3\f\3\f\3\r\3\r\3\16\3\16\3\17\3\17")
+        buf.write(u"\3\20\3\20\3\21\3\21\3\22\3\22\3\23\3\23\3\24\3\24\3")
+        buf.write(u"\25\3\25\3\25\3\26\3\26\5\26\u009d\n\26\5\26\u009f\n")
+        buf.write(u"\26\3\26\3\26\3\27\6\27\u00a4\n\27\r\27\16\27\u00a5\3")
+        buf.write(u"\27\3\27\3\30\3\30\5\30\u00ac\n\30\3\31\3\31\3\31\3\32")
+        buf.write(u"\3\32\3\33\3\33\3\34\6\34\u00b6\n\34\r\34\16\34\u00b7")
+        buf.write(u"\3\34\5\34\u00bb\n\34\3\35\6\35\u00be\n\35\r\35\16\35")
+        buf.write(u"\u00bf\3\35\2\2\36\2\4\6\b\n\f\16\20\22\24\26\30\32\34")
+        buf.write(u"\36 \"$&(*,.\60\62\64\668\2\6\3\2\n\13\3\2\16\17\3\2")
+        buf.write(u"\24\26\3\2\31\31\u00c7\2;\3\2\2\2\4N\3\2\2\2\6R\3\2\2")
+        buf.write(u"\2\b`\3\2\2\2\nb\3\2\2\2\fm\3\2\2\2\16w\3\2\2\2\20y\3")
+        buf.write(u"\2\2\2\22}\3\2\2\2\24\u0083\3\2\2\2\26\u0085\3\2\2\2")
+        buf.write(u"\30\u0087\3\2\2\2\32\u0089\3\2\2\2\34\u008b\3\2\2\2\36")
+        buf.write(u"\u008d\3\2\2\2 \u008f\3\2\2\2\"\u0091\3\2\2\2$\u0093")
+        buf.write(u"\3\2\2\2&\u0095\3\2\2\2(\u0097\3\2\2\2*\u009e\3\2\2\2")
+        buf.write(u",\u00a3\3\2\2\2.\u00a9\3\2\2\2\60\u00ad\3\2\2\2\62\u00b0")
+        buf.write(u"\3\2\2\2\64\u00b2\3\2\2\2\66\u00b5\3\2\2\28\u00bd\3\2")
+        buf.write(u"\2\2:<\5\4\3\2;:\3\2\2\2<=\3\2\2\2=;\3\2\2\2=>\3\2\2")
+        buf.write(u"\2>?\3\2\2\2?@\7\2\2\3@\3\3\2\2\2AO\5\6\4\2BO\5\36\20")
+        buf.write(u"\2CO\5 \21\2DO\5\"\22\2EO\5$\23\2FO\5&\24\2GO\5(\25\2")
+        buf.write(u"HO\5*\26\2IO\5.\30\2JO\5\60\31\2KO\5\62\32\2LO\5\64\33")
+        buf.write(u"\2MO\13\2\2\2NA\3\2\2\2NB\3\2\2\2NC\3\2\2\2ND\3\2\2\2")
+        buf.write(u"NE\3\2\2\2NF\3\2\2\2NG\3\2\2\2NH\3\2\2\2NI\3\2\2\2NJ")
+        buf.write(u"\3\2\2\2NK\3\2\2\2NL\3\2\2\2NM\3\2\2\2NO\3\2\2\2OP\3")
+        buf.write(u"\2\2\2PQ\7\31\2\2Q\5\3\2\2\2RS\5\b\5\2SU\5\66\34\2TV")
+        buf.write(u"\5\n\6\2UT\3\2\2\2UV\3\2\2\2VX\3\2\2\2WY\5,\27\2XW\3")
+        buf.write(u"\2\2\2XY\3\2\2\2Y\7\3\2\2\2Za\5\22\n\2[a\5\24\13\2\\")
+        buf.write(u"a\5\26\f\2]a\5\30\r\2^a\5\32\16\2_a\5\34\17\2`Z\3\2\2")
+        buf.write(u"\2`[\3\2\2\2`\\\3\2\2\2`]\3\2\2\2`^\3\2\2\2`_\3\2\2\2")
+        buf.write(u"a\t\3\2\2\2bd\7\3\2\2ce\5\f\7\2dc\3\2\2\2ef\3\2\2\2f")
+        buf.write(u"d\3\2\2\2fg\3\2\2\2g\13\3\2\2\2hi\5\16\b\2ij\7\4\2\2")
+        buf.write(u"jl\3\2\2\2kh\3\2\2\2lo\3\2\2\2mk\3\2\2\2mn\3\2\2\2nq")
+        buf.write(u"\3\2\2\2om\3\2\2\2pr\7\5\2\2qp\3\2\2\2qr\3\2\2\2rs\3")
+        buf.write(u"\2\2\2st\5\16\b\2t\r\3\2\2\2ux\58\35\2vx\5\20\t\2wu\3")
+        buf.write(u"\2\2\2wv\3\2\2\2x\17\3\2\2\2yz\58\35\2z{\7\6\2\2{|\5")
+        buf.write(u"8\35\2|\21\3\2\2\2}~\7\32\2\2~\23\3\2\2\2\177\u0084\7")
+        buf.write(u"\33\2\2\u0080\u0084\7\34\2\2\u0081\u0082\7\34\2\2\u0082")
+        buf.write(u"\u0084\7\33\2\2\u0083\177\3\2\2\2\u0083\u0080\3\2\2\2")
+        buf.write(u"\u0083\u0081\3\2\2\2\u0084\25\3\2\2\2\u0085\u0086\7\35")
+        buf.write(u"\2\2\u0086\27\3\2\2\2\u0087\u0088\7\36\2\2\u0088\31\3")
+        buf.write(u"\2\2\2\u0089\u008a\7\37\2\2\u008a\33\3\2\2\2\u008b\u008c")
+        buf.write(u"\7 \2\2\u008c\35\3\2\2\2\u008d\u008e\7\7\2\2\u008e\37")
+        buf.write(u"\3\2\2\2\u008f\u0090\7\b\2\2\u0090!\3\2\2\2\u0091\u0092")
+        buf.write(u"\7\t\2\2\u0092#\3\2\2\2\u0093\u0094\t\2\2\2\u0094%\3")
+        buf.write(u"\2\2\2\u0095\u0096\7\f\2\2\u0096\'\3\2\2\2\u0097\u0098")
+        buf.write(u"\7\r\2\2\u0098\u0099\5,\27\2\u0099)\3\2\2\2\u009a\u009c")
+        buf.write(u"\t\3\2\2\u009b\u009d\7\3\2\2\u009c\u009b\3\2\2\2\u009c")
+        buf.write(u"\u009d\3\2\2\2\u009d\u009f\3\2\2\2\u009e\u009a\3\2\2")
+        buf.write(u"\2\u009e\u009f\3\2\2\2\u009f\u00a0\3\2\2\2\u00a0\u00a1")
+        buf.write(u"\5,\27\2\u00a1+\3\2\2\2\u00a2\u00a4\t\4\2\2\u00a3\u00a2")
+        buf.write(u"\3\2\2\2\u00a4\u00a5\3\2\2\2\u00a5\u00a3\3\2\2\2\u00a5")
+        buf.write(u"\u00a6\3\2\2\2\u00a6\u00a7\3\2\2\2\u00a7\u00a8\n\5\2")
+        buf.write(u"\2\u00a8-\3\2\2\2\u00a9\u00ab\7\20\2\2\u00aa\u00ac\5")
+        buf.write(u",\27\2\u00ab\u00aa\3\2\2\2\u00ab\u00ac\3\2\2\2\u00ac")
+        buf.write(u"/\3\2\2\2\u00ad\u00ae\7\21\2\2\u00ae\u00af\5,\27\2\u00af")
+        buf.write(u"\61\3\2\2\2\u00b0\u00b1\7\22\2\2\u00b1\63\3\2\2\2\u00b2")
+        buf.write(u"\u00b3\7\23\2\2\u00b3\65\3\2\2\2\u00b4\u00b6\7\24\2\2")
+        buf.write(u"\u00b5\u00b4\3\2\2\2\u00b6\u00b7\3\2\2\2\u00b7\u00b5")
+        buf.write(u"\3\2\2\2\u00b7\u00b8\3\2\2\2\u00b8\u00ba\3\2\2\2\u00b9")
+        buf.write(u"\u00bb\7\25\2\2\u00ba\u00b9\3\2\2\2\u00ba\u00bb\3\2\2")
+        buf.write(u"\2\u00bb\67\3\2\2\2\u00bc\u00be\7\24\2\2\u00bd\u00bc")
+        buf.write(u"\3\2\2\2\u00be\u00bf\3\2\2\2\u00bf\u00bd\3\2\2\2\u00bf")
+        buf.write(u"\u00c0\3\2\2\2\u00c09\3\2\2\2\23=NUX`fmqw\u0083\u009c")
+        buf.write(u"\u009e\u00a5\u00ab\u00b7\u00ba\u00bf")
         return buf.getvalue()
 
 
@@ -425,6 +426,10 @@ class LiturgieParser ( Parser ):
             return self.getTypedRuleContext(LiturgieParser.CouplettenContext,0)
 
 
+        def de_rest(self):
+            return self.getTypedRuleContext(LiturgieParser.De_restContext,0)
+
+
         def getRuleIndex(self):
             return LiturgieParser.RULE_lied
 
@@ -461,6 +466,13 @@ class LiturgieParser ( Parser ):
             if _la==LiturgieParser.T__0:
                 self.state = 82
                 self.coupletten()
+
+
+            self.state = 86
+            _la = self._input.LA(1)
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << LiturgieParser.Digit) | (1 << LiturgieParser.Character) | (1 << LiturgieParser.Punctuation))) != 0):
+                self.state = 85
+                self.de_rest()
 
 
         except RecognitionException as re:
@@ -526,36 +538,36 @@ class LiturgieParser ( Parser ):
         localctx = LiturgieParser.BundelContext(self, self._ctx, self.state)
         self.enterRule(localctx, 6, self.RULE_bundel)
         try:
-            self.state = 91
+            self.state = 94
             token = self._input.LA(1)
             if token in [LiturgieParser.Psalm]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 85
+                self.state = 88
                 self.psalm()
 
             elif token in [LiturgieParser.Gezang, LiturgieParser.GereformeerdKerkboek]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 86
+                self.state = 89
                 self.gezang()
 
             elif token in [LiturgieParser.Liedboek]:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 87
+                self.state = 90
                 self.liedboek()
 
             elif token in [LiturgieParser.Opwekking]:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 88
+                self.state = 91
                 self.opwekking()
 
             elif token in [LiturgieParser.NieuweLiedboek]:
                 self.enterOuterAlt(localctx, 5)
-                self.state = 89
+                self.state = 92
                 self.nlb()
 
             elif token in [LiturgieParser.PsalmenVoorNu]:
                 self.enterOuterAlt(localctx, 6)
-                self.state = 90
+                self.state = 93
                 self.pvn()
 
             else:
@@ -606,22 +618,23 @@ class LiturgieParser ( Parser ):
 
         localctx = LiturgieParser.CouplettenContext(self, self._ctx, self.state)
         self.enterRule(localctx, 8, self.RULE_coupletten)
-        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 93
+            self.state = 96
             self.match(LiturgieParser.T__0)
-            self.state = 95 
+            self.state = 98 
             self._errHandler.sync(self)
-            _la = self._input.LA(1)
-            while True:
-                self.state = 94
-                self.couplet()
-                self.state = 97 
+            _alt = 1
+            while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
+                if _alt == 1:
+                    self.state = 97
+                    self.couplet()
+
+                else:
+                    raise NoViableAltException(self)
+                self.state = 100 
                 self._errHandler.sync(self)
-                _la = self._input.LA(1)
-                if not (_la==LiturgieParser.T__2 or _la==LiturgieParser.Digit):
-                    break
+                _alt = self._interp.adaptivePredict(self._input,5,self._ctx)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -671,27 +684,27 @@ class LiturgieParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 104
+            self.state = 107
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,5,self._ctx)
+            _alt = self._interp.adaptivePredict(self._input,6,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt==1:
-                    self.state = 99
+                    self.state = 102
                     self.nummer_of_nummers()
-                    self.state = 100
+                    self.state = 103
                     self.match(LiturgieParser.T__1) 
-                self.state = 106
+                self.state = 109
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,5,self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,6,self._ctx)
 
-            self.state = 108
+            self.state = 111
             _la = self._input.LA(1)
             if _la==LiturgieParser.T__2:
-                self.state = 107
+                self.state = 110
                 self.match(LiturgieParser.T__2)
 
 
-            self.state = 110
+            self.state = 113
             self.nummer_of_nummers()
         except RecognitionException as re:
             localctx.exception = re
@@ -740,17 +753,17 @@ class LiturgieParser ( Parser ):
         localctx = LiturgieParser.Nummer_of_nummersContext(self, self._ctx, self.state)
         self.enterRule(localctx, 12, self.RULE_nummer_of_nummers)
         try:
-            self.state = 114
-            la_ = self._interp.adaptivePredict(self._input,7,self._ctx)
+            self.state = 117
+            la_ = self._interp.adaptivePredict(self._input,8,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 112
+                self.state = 115
                 self.nummer()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 113
+                self.state = 116
                 self.nummers()
                 pass
 
@@ -802,11 +815,11 @@ class LiturgieParser ( Parser ):
         self.enterRule(localctx, 14, self.RULE_nummers)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 116
+            self.state = 119
             self.nummer()
-            self.state = 117
+            self.state = 120
             self.match(LiturgieParser.T__3)
-            self.state = 118
+            self.state = 121
             self.nummer()
         except RecognitionException as re:
             localctx.exception = re
@@ -851,7 +864,7 @@ class LiturgieParser ( Parser ):
         self.enterRule(localctx, 16, self.RULE_psalm)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 120
+            self.state = 123
             self.match(LiturgieParser.Psalm)
         except RecognitionException as re:
             localctx.exception = re
@@ -898,25 +911,25 @@ class LiturgieParser ( Parser ):
         localctx = LiturgieParser.GezangContext(self, self._ctx, self.state)
         self.enterRule(localctx, 18, self.RULE_gezang)
         try:
-            self.state = 126
-            la_ = self._interp.adaptivePredict(self._input,8,self._ctx)
+            self.state = 129
+            la_ = self._interp.adaptivePredict(self._input,9,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 122
+                self.state = 125
                 self.match(LiturgieParser.Gezang)
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 123
+                self.state = 126
                 self.match(LiturgieParser.GereformeerdKerkboek)
                 pass
 
             elif la_ == 3:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 124
+                self.state = 127
                 self.match(LiturgieParser.GereformeerdKerkboek)
-                self.state = 125
+                self.state = 128
                 self.match(LiturgieParser.Gezang)
                 pass
 
@@ -964,7 +977,7 @@ class LiturgieParser ( Parser ):
         self.enterRule(localctx, 20, self.RULE_liedboek)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 128
+            self.state = 131
             self.match(LiturgieParser.Liedboek)
         except RecognitionException as re:
             localctx.exception = re
@@ -1009,7 +1022,7 @@ class LiturgieParser ( Parser ):
         self.enterRule(localctx, 22, self.RULE_opwekking)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 130
+            self.state = 133
             self.match(LiturgieParser.Opwekking)
         except RecognitionException as re:
             localctx.exception = re
@@ -1054,7 +1067,7 @@ class LiturgieParser ( Parser ):
         self.enterRule(localctx, 24, self.RULE_nlb)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 132
+            self.state = 135
             self.match(LiturgieParser.NieuweLiedboek)
         except RecognitionException as re:
             localctx.exception = re
@@ -1099,7 +1112,7 @@ class LiturgieParser ( Parser ):
         self.enterRule(localctx, 26, self.RULE_pvn)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 134
+            self.state = 137
             self.match(LiturgieParser.PsalmenVoorNu)
         except RecognitionException as re:
             localctx.exception = re
@@ -1142,7 +1155,7 @@ class LiturgieParser ( Parser ):
         self.enterRule(localctx, 28, self.RULE_welkom)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 136
+            self.state = 139
             self.match(LiturgieParser.T__4)
         except RecognitionException as re:
             localctx.exception = re
@@ -1185,7 +1198,7 @@ class LiturgieParser ( Parser ):
         self.enterRule(localctx, 30, self.RULE_stilte)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 138
+            self.state = 141
             self.match(LiturgieParser.T__5)
         except RecognitionException as re:
             localctx.exception = re
@@ -1228,7 +1241,7 @@ class LiturgieParser ( Parser ):
         self.enterRule(localctx, 32, self.RULE_votum)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 140
+            self.state = 143
             self.match(LiturgieParser.T__6)
         except RecognitionException as re:
             localctx.exception = re
@@ -1272,7 +1285,7 @@ class LiturgieParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 142
+            self.state = 145
             _la = self._input.LA(1)
             if not(_la==LiturgieParser.T__7 or _la==LiturgieParser.T__8):
                 self._errHandler.recoverInline(self)
@@ -1319,7 +1332,7 @@ class LiturgieParser ( Parser ):
         self.enterRule(localctx, 36, self.RULE_amen)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 144
+            self.state = 147
             self.match(LiturgieParser.T__9)
         except RecognitionException as re:
             localctx.exception = re
@@ -1365,9 +1378,9 @@ class LiturgieParser ( Parser ):
         self.enterRule(localctx, 38, self.RULE_gebed)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 146
+            self.state = 149
             self.match(LiturgieParser.T__10)
-            self.state = 147
+            self.state = 150
             self.de_rest()
         except RecognitionException as re:
             localctx.exception = re
@@ -1414,25 +1427,25 @@ class LiturgieParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 153
+            self.state = 156
             _la = self._input.LA(1)
             if _la==LiturgieParser.T__11 or _la==LiturgieParser.T__12:
-                self.state = 149
+                self.state = 152
                 _la = self._input.LA(1)
                 if not(_la==LiturgieParser.T__11 or _la==LiturgieParser.T__12):
                     self._errHandler.recoverInline(self)
                 else:
                     self.consume()
-                self.state = 151
+                self.state = 154
                 _la = self._input.LA(1)
                 if _la==LiturgieParser.T__0:
-                    self.state = 150
+                    self.state = 153
                     self.match(LiturgieParser.T__0)
 
 
 
 
-            self.state = 155
+            self.state = 158
             self.de_rest()
         except RecognitionException as re:
             localctx.exception = re
@@ -1496,12 +1509,12 @@ class LiturgieParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 158 
+            self.state = 161 
             self._errHandler.sync(self)
             _alt = 1
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt == 1:
-                    self.state = 157
+                    self.state = 160
                     _la = self._input.LA(1)
                     if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << LiturgieParser.Digit) | (1 << LiturgieParser.Character) | (1 << LiturgieParser.Punctuation))) != 0)):
                         self._errHandler.recoverInline(self)
@@ -1510,11 +1523,11 @@ class LiturgieParser ( Parser ):
 
                 else:
                     raise NoViableAltException(self)
-                self.state = 160 
+                self.state = 163 
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,11,self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,12,self._ctx)
 
-            self.state = 162
+            self.state = 165
             _la = self._input.LA(1)
             if _la <= 0 or _la==LiturgieParser.Separator:
                 self._errHandler.recoverInline(self)
@@ -1565,12 +1578,12 @@ class LiturgieParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 164
+            self.state = 167
             self.match(LiturgieParser.T__13)
-            self.state = 166
+            self.state = 169
             _la = self._input.LA(1)
             if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << LiturgieParser.Digit) | (1 << LiturgieParser.Character) | (1 << LiturgieParser.Punctuation))) != 0):
-                self.state = 165
+                self.state = 168
                 self.de_rest()
 
 
@@ -1618,9 +1631,9 @@ class LiturgieParser ( Parser ):
         self.enterRule(localctx, 46, self.RULE_belijdenis)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 168
+            self.state = 171
             self.match(LiturgieParser.T__14)
-            self.state = 169
+            self.state = 172
             self.de_rest()
         except RecognitionException as re:
             localctx.exception = re
@@ -1663,7 +1676,7 @@ class LiturgieParser ( Parser ):
         self.enterRule(localctx, 48, self.RULE_collecte)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 171
+            self.state = 174
             self.match(LiturgieParser.T__15)
         except RecognitionException as re:
             localctx.exception = re
@@ -1706,7 +1719,7 @@ class LiturgieParser ( Parser ):
         self.enterRule(localctx, 50, self.RULE_zegen)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 173
+            self.state = 176
             self.match(LiturgieParser.T__16)
         except RecognitionException as re:
             localctx.exception = re
@@ -1755,25 +1768,26 @@ class LiturgieParser ( Parser ):
 
         localctx = LiturgieParser.LiednummerContext(self, self._ctx, self.state)
         self.enterRule(localctx, 52, self.RULE_liednummer)
-        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 176 
+            self.state = 179 
             self._errHandler.sync(self)
-            _la = self._input.LA(1)
-            while True:
-                self.state = 175
-                self.match(LiturgieParser.Digit)
-                self.state = 178 
-                self._errHandler.sync(self)
-                _la = self._input.LA(1)
-                if not (_la==LiturgieParser.Digit):
-                    break
+            _alt = 1
+            while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
+                if _alt == 1:
+                    self.state = 178
+                    self.match(LiturgieParser.Digit)
 
-            self.state = 181
-            _la = self._input.LA(1)
-            if _la==LiturgieParser.Character:
-                self.state = 180
+                else:
+                    raise NoViableAltException(self)
+                self.state = 181 
+                self._errHandler.sync(self)
+                _alt = self._interp.adaptivePredict(self._input,14,self._ctx)
+
+            self.state = 184
+            la_ = self._interp.adaptivePredict(self._input,15,self._ctx)
+            if la_ == 1:
+                self.state = 183
                 self.match(LiturgieParser.Character)
 
 
@@ -1823,19 +1837,19 @@ class LiturgieParser ( Parser ):
         self.enterRule(localctx, 54, self.RULE_nummer)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 184 
+            self.state = 187 
             self._errHandler.sync(self)
             _alt = 1
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt == 1:
-                    self.state = 183
+                    self.state = 186
                     self.match(LiturgieParser.Digit)
 
                 else:
                     raise NoViableAltException(self)
-                self.state = 186 
+                self.state = 189 
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,15,self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,16,self._ctx)
 
         except RecognitionException as re:
             localctx.exception = re

@@ -19,7 +19,7 @@ regel : (lied |
 		 zegen |
 		 .)? Separator;
 
-lied : bundel liednummer coupletten?;
+lied : bundel liednummer coupletten? de_rest?;
 
 bundel : psalm | gezang | liedboek | opwekking | nlb | pvn;
 
